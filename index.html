@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./javascript/script.js" type="module" defer></script>
     <title>Morse Code</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Morse Code Translator</h1>
+    </header>
+    <main class="container">
+        <section class="trans-input">
+            <div class="trans-input__textarea">
+                <h2>English</h2>
+                <textarea id="engInput" cols="30" rows="10" placeholder="Write your english word/sentence here."></textarea>
+            </div>
+            <div class="trans-input__buttons">
+                <button>Translate</button>
+                <button>Clear</button>
+            </div>
+        </section>
+        <section class="trans-input">
+            <div class="trans-input__textarea">
+                <h2>Morse Code</h2>
+                <textarea id="morseInput" cols="30" rows="10" placeholder="Write your morse code here."></textarea>
+            </div>
+            <div class="trans-input__buttons">
+                <button>Translate</button>
+                <button>Clear</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
