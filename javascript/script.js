@@ -12,25 +12,28 @@ const morseClearButton = document.getElementById("morseClear");
 
 
 
-engTransButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    morseText.value = engToMorse(engText.value, morseCode)
+engTransButton.addEventListener('click', () => {
+    try{
+        morseText.value = engToMorse(engText.value, morseCode)
+    } catch(e) {
+        morseText.value = e.message
+    }
 })
 
-morseTransButton.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    engText.value = morseToEng(morseText.value, morseCode)
+morseTransButton.addEventListener('click', () => {
+    try{
+        engText.value = morseToEng(morseText.value, morseCode)
+    } catch(e) {
+        engText.value = e.message
+    }
 })
 
-engClearButton.addEventListener('click', (e) => {
-    e.preventDefault();
+engClearButton.addEventListener('click', () => {
     engText.value = ""
     morseText.value = ""
 })
 
-morseClearButton.addEventListener('click', (e) => {
-    e.preventDefault();
+morseClearButton.addEventListener('click', () => {
     engText.value = ""
     morseText.value = ""
 })
