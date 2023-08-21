@@ -27,9 +27,11 @@ The Morse Translator app allows users to translate text into Morse code and vice
 
 To get started with this project, clone the repository and install the dependencies:
 
-`git clone git@github.com:matheuslincon/fakeos-nology.git`
+`git clone git@github.com:matheuslincon/morse-code.git`
 
-`cd fakeos-nology`
+`cd morse-code`
+
+`npm install`
 
 You can now open the index.html file in your local repository folder.
 
